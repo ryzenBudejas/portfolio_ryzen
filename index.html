@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+  /* label color */
+  input {
+    color: #ffffff !important;
+  }
+
+  .input-field label {
+    color: #ffffff !important;
+  }
+
+  /* label focus color */
+  .input-field input[type=text]:focus+label {
+    color: #ffffff !important;
+  }
+
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #ffffff !important;
+
+    box-shadow: 0 1px 0 0 #ffffff !important;
+
+  }
+
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid #ffffff !important;
+    box-shadow: 0 1px 0 0 #ffffff !important;
+  }
+
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid #ffffff !important;
+    box-shadow: 0 1px 0 0 #ffffff !important;
+  }
+
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: white !important;
+  }
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .navbar_link {
+    display: block;
+  }
+
+  @media only screen and (min-width: 993px) {
+    .navbar_link {
+      display: none;
+
+    }
+  }
+
+  .brand-name {
+    font-size: 1.5rem;
+  }
+
+  .list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+  }
+
+  .list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+</style>
+
+<body class=" grey darken-4">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Navbar -->
+  <div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper " style="background-color: #242526;">
+
+      <a href="#" class="brand-name deep-orange-text text-darken-1" style="margin-left: 10px;">Ryzen Portfolio</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger" ><i
+          class="material-icons deep-orange-text text-darken-1">menu</i></a>
+
+      <ul id="nav-mobile" class="right hide-on-med-and-down deep-orange-text text-darken-1 ">
+        <li><a href="#home" class="deep-orange-text text-darken-1">Home</a></li>
+        <li><a href="#profile" class="deep-orange-text text-darken-1">Profile</a></li>
+        <li><a href="#languages" class="deep-orange-text text-darken-1">Language</a></li>
+        <li><a href="#projects" class="deep-orange-text text-darken-1">Projects</a></li>
+        <li><a href="#education" class="deep-orange-text text-darken-1">Education</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+  <!-- end Navbar -->
+  <!-- sidebar -->
+  <ul class="sidenav" id="mobile-demo"  style="background-color: #242526;">
+    <li><a href="#home" class="deep-orange-text text-darken-1">Home</a></li>
+    <li><a href="#profile" class="deep-orange-text text-darken-1">Profile</a></li>
+        <li><a href="#languages" class="deep-orange-text text-darken-1">Language</a></li>
+        <li><a href="#projects" class="deep-orange-text text-darken-1">Projects</a></li>
+        <li><a href="#education" class="deep-orange-text text-darken-1">Education</a></li>
+  </ul>
+  <!-- end sidebar -->
+
+  <!-- Banner Start -->
+  <div class="carousel carousel-slider center section scrollspy "  id="home" style="height: 600px;">
+
+    <div class="carousel-item center  "
+      style="background-image: url(https://images.pexels.com/photos/265125/pexels-photo-265125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); background-size: cover;">
+      <h1 class="deep-orange-text text-darken-1" style="margin-top: 200px;">Budejas, Ryzen G.</h1>
+      <h3 class="white-text">Student</h3>
+    </div>
+
+    <div class="carousel-item center  "
+      style="background-image: url(https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); background-size: cover;">
+
+      <h1 class="deep-orange-text text-darken-1" style="margin-top: 200px;">Soon to be Programmer</h1>
+      <h3 class="white-text">Manifesting</h3>
+    </div>
+
+  </div>
+
+  <!-- Banner End -->
+
+  <!-- Start Profile -->
+  <br>
+  <br>
+  <div class="container section scrollspy" id="profile">
+    <div class="row flex">
+      <div class="col s12 m12 l12 xl6">
+        <div class="card-panel grey-text text-lighten-4 "
+          style="height: 100%; background-color: #242526;text-align: center; ">
+          <img src="Capture.JPG" class="materialboxed" style="width: 100%; height: 100%;" class="center" alt="">
+        </div>
+      </div>
+      <div class="col s12 m12 l12 xl6">
+        <div class="card-panel grey-text text-lighten-4 " style="height: 100%; background-color: #242526; ">
+          <p class="white-text flow-text"> I'm Ryzen Budejas, and I'm now completing my bachelor's degree in information
+            technology at
+            the city college of Calamba. I've finished my on-the-job training for the programming position at
+            my school's MISD department. During my time as an intern, I contributed to the development
+            of three systems: an evaluation system, an E-sked for the college registrar, and a system for
+            tracking employee attendance. After I graduate, my goal is to locate a place where I can
+            advance my career.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- End Profile -->
+  <!-- Programming Language  -->
+
+  <br>
+  <br>
+  <div class="container section scrollspy" id="languages">
+    <h3 class="deep-orange-text text-darken-1 center">Programming Languages</h3>
+    <div class="row center flex">
+      <div class="col s12 m12 l12 xl4" style="border: solid 2px #212121 ;">
+        <div class="card  grey-text text-lighten-4 " style="height: 100%; background-color: #242526; ">
+          <div class="card-image">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png"
+              style="width: 100%; height:400px;">
+
+          </div>
+          <div class="card-content">
+            <h5>Javascript</h5>
+            <h6>Know the basic fundamentals with a rate of 7/10</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m12 l12 xl4" style="border: solid 2px #212121 ;">
+        <div class="card  grey-text text-lighten-4 " style="height: 100%; background-color: #242526; ">
+          <div class="card-image">
+            <img src="https://www.php.net/images/meta-image.png" style="width: 100%; height:400px;">
+
+          </div>
+          <div class="card-content">
+            <h5>Php</h5>
+            <h6>Intermidiate knowledge with a rate of 8/10</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m12 l12 xl4" style="border: solid 2px #212121 ;">
+        <div class="card  grey-text text-lighten-4 " style="height: 100%; background-color: #242526; ">
+          <div class="card-image">
+            <img src="https://miro.medium.com/v2/resize:fit:1200/1*RK50G3R8xeRtANWAkJE6Mw.png"
+              style="width: 100%; height:400px;">
+
+          </div>
+          <div class="card-content">
+            <h5>SQL</h5>
+            <h6>Basic knowledge with a rate of 5/10</h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- end Programming languages  -->
+
+    <!-- Programming Language  -->
+  </div>
+  <!-- Programming Language  -->
+
+  <br>
+  <br>
+  <div class="container section scrollspy" id="projects">
+    <h3 class="deep-orange-text text-darken-1 center">Projects</h3>
+    <div class="row center flex">
+      <div class="col s12 m12 l12 xl4" style="border: solid 2px #212121 ;">
+        <div class="card  grey-text text-lighten-4 " style="height: 100%; background-color: #242526; ">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img
+              src="https://yt3.googleusercontent.com/Brxf4BwPHZSPE_vnbbVc9ra8F5hmCNwRf_1gd0WNFAsD3qE_7PzVguXj4PCQhQVyiGA2UQsg=s900-c-k-c0x00ffffff-no-rj"
+              class="activator" style="width: 100%; height:400px;">
+
+          </div>
+          <div class="card-content">
+            <h5>IRM Event Scheduling System</h5>
+            <h6>Capstone Project</h6>
+          </div>
+          <div class="card-reveal " style="background-color: #212121;">
+            <span class="card-title" style="font-weight: 400;">IRM Event Scheduling System<i class="material-icons right">close</i></span>
+            <h6>Capstone Project</h6>
+            <p class="flow-text">Created Using Bootstrap, JavaScript, jQuery, Html, CSS, PHP for
+              backend and MySQLfor Database. For the IRM ministries.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m12 l12 xl4" style="border: solid 2px #212121 ;">
+        <div class="card  grey-text text-lighten-4 " style="height: 100%; background-color: #242526; ">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img src="https://www.ccc.edu.ph/images/home/ccc-home-logo.png" class="activator"
+              style="width: 100%; height:400px;">
+
+          </div>
+          <div class="card-content">
+            <h5>CCC SCHEDULING SYSTEM </h5>
+            <h6>Intern Project</h6>
+          </div>
+          <div class="card-reveal " style="background-color: #212121;">
+           
+                <span class="card-title" style="font-weight: 400;"> CCC SCHEDULING SYSTEM <i class="material-icons right">close</i></span>
+            <h6>Intern Project</h6>
+            <p class="flow-text">Created Using Bootstrap, JavaScript, jQuery, Html, CSS, PHP for
+              backend and MySQLfor Database.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m12 l12 xl4" style="border: solid 2px #212121 ;">
+        <div class="card  grey-text text-lighten-4 " style="height: 100%; background-color: #242526; ">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img src="https://www.ccc.edu.ph/images/home/ccc-home-logo.png" class="activator"
+              style="width: 100%; height:400px;">
+
+          </div>
+          <div class="card-content">
+            <h5  >EMPLOYEE ATTENDANCE MONITORING SYSTEM</h5>
+            <h6>Intern Project</h6>
+          </div>
+          <div class="card-reveal " style="background-color: #212121;">
+            <span class="card-title" style="font-weight: 400;">EMPLOYEE ATTENDANCE MONITORING SYSTEM<i class="material-icons right">close</i></span>
+            <h6>Intern Project</h6>
+            <p class="flow-text">Created Using Bootstrap, JavaScript, jQuery, Html, CSS, PHP for
+              backend and MySQLfor Database. For the IRM ministries.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- end Programming languages  -->
+
+    <!-- Programming Language  -->
+  </div>
+  <br>
+  <br>
+  <div class="container section scrollspy" id="education">
+    <h3 class="deep-orange-text text-darken-1 center">Education background</h3>
+    <div class="row center flex">
+      <div class="col s12 m12 l12 xl4" style="border: solid 2px #212121 ;">
+        <div class="card  grey-text text-lighten-4 " style="height: 100%; background-color: #242526; ">
+          <div class="card-image gray-text text-darken-2">
+            <img
+              src="https://scontent.fmnl16-1.fna.fbcdn.net/v/t39.30808-6/328453628_905589133802032_1857315205926682719_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEWh_Xz39pP_2V4f_0BU7kJ54L0fCddQHDngvR8J11AcNKVWvxwsCvx8Wsw5AXSUIVAmpiyW8cWXL5XTQ2DiifP&_nc_ohc=-y6LWki7WFcAX94SPff&_nc_ht=scontent.fmnl16-1.fna&oh=00_AfDL2j-YLFsSfGPAqSot9CO8x71eflygeePL7D5yQoYB6Q&oe=64C44195"
+              style="width: 100%; height:400px;">
+
+          </div>
+          <div class="card-content">
+            <h5>Elementary</h5>
+            <h6>Shool year: 2007-2013</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m12 l12 xl4" style="border: solid 2px #212121 ;">
+        <div class="card  grey-text text-lighten-4 " style="height: 100%; background-color: #242526; ">
+          <div class="card-image">
+            <img
+              src="https://campvicentelim-integratedschool.com/pluginfile.php/1/theme_moove/logo/1628584831/cvlis_logo.png"
+              style="width: 100%; height:400px;">
+
+          </div>
+          <div class="card-content">
+            <h5>Junior to Senior Highschool</h5>
+            <h6>Information In Communication Technology</h6>
+            <h6>Shool year: 2013-2019</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m12 l12 xl4" style="border: solid 2px #212121 ;">
+        <div class="card  grey-text text-lighten-4 " style="height: 100%; background-color: #242526; ">
+          <div class="card-image">
+            <img src="https://www.ccc.edu.ph/images/home/ccc-home-logo.png" style="width: 100%; height:400px;">
+
+          </div>
+          <div class="card-content">
+            <h5>City College Of Calamba</h5>
+            <h6>Bachelor of Science in Information Technology</h6>
+            <h6>Shool year: 2019-2023</h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- end Programming languages  -->
+  </div>
+  <!-- footer -->
+  <footer class="page-footer" style="background-color: #242526;">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Please Subscribe</h5>
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">Email</label>
+            </div>
+          </div>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Contact Me at</h5>
+          <ul class="list-inline">
+            <li><i class="fa fa-facebook-official" style="font-size:36px"></i></li>
+            <li><i class="fa fa-instagram" style="font-size:36px"></i></li>
+            <li><i class="fa fa-twitter" style="font-size:36px"></i></li>
+            <li><i class="fa fa-github" style="font-size:36px"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2023 Copyright
+
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+</body>
+<script>
+  $(document).ready(function () {
+    $('.carousel.carousel-slider').carousel({
+      fullWidth: true,
+      indicators: true
+    });
+    $('.materialboxed').materialbox();
+    $('.scrollspy').scrollSpy();
+    $('.sidenav').sidenav();
+
+  });
+</script>
+
+</html>
